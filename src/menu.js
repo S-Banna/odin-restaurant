@@ -1,0 +1,64 @@
+function exported2() {
+    let br = document.createElement("br");
+    let br2 = document.createElement("br");
+    let br3 = document.createElement("br");
+    let body = document.getElementById("body");
+    body.innerHTML = "";
+    let title = document.createElement("div");
+    title.setAttribute("id", "title");
+    title.textContent = "Menu";
+    body.appendChild(title);
+    let split = document.createElement("div");
+    split.setAttribute("id", "split");
+    body.appendChild(split);
+    let review = document.createElement("div");
+    review.setAttribute("id", 'review');
+    let reviewText = document.createElement("div");
+    reviewText.textContent = "Chicken Sandwich: 300,000";
+    let reviewText2 = document.createElement("div");
+    reviewText2.textContent = "Chicken Liver Sandwich: 300,000";
+    let reviewText3 = document.createElement("div");
+    reviewText3.textContent = "Fajita Sandwich: 320,000";
+    let reviewText4 = document.createElement("div");
+    reviewText4.textContent = "Taouk Sandwich: 300,000";
+    split.appendChild(review);
+    let reviewer = document.createElement("div");
+    reviewer.textContent = "Sandwiches";
+    reviewer.style.fontWeight = "600";
+    reviewer.style.fontSize = "20px";
+    review.appendChild(reviewer);
+    review.appendChild(br);
+    review.appendChild(reviewText);
+    review.appendChild(reviewText2);
+    review.appendChild(reviewText3);
+    review.appendChild(reviewText4);
+    let hours = document.createElement("div");
+    hours.setAttribute("id", "hours");
+    split.appendChild(hours);
+    let hoursText = document.createElement("div");
+    hoursText.textContent = "Other";
+    hoursText.style.fontSize = "20px";
+    hoursText.style.fontWeight = "600";
+    hours.appendChild(hoursText);
+    hours.appendChild(br2);
+    let hoursMF = document.createElement("div");
+    let hoursSS = document.createElement("div");
+    hoursMF.textContent = "Hamburger: 300,000";
+    hoursSS.textContent = "French Fries Sandwich: 300,000";
+    hours.appendChild(hoursMF);
+    hours.appendChild(hoursSS);
+    let location = document.createElement("div");
+    location.setAttribute("id", "location")
+    let locationFinal = document.createElement("div");
+    locationFinal.style.fontSize = "20px";
+    locationFinal.style.fontWeight = "600";
+    locationFinal.textContent = "Drinks"
+    location.appendChild(locationFinal);
+    split.appendChild(location);
+    let locationA = document.createElement("div");
+    locationA.textContent = "Soft Drinks and Fresh Juices.";
+    location.appendChild(br3);
+    location.appendChild(locationA);
+}
+
+export { exported2 };
